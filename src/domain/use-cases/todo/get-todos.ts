@@ -3,7 +3,7 @@ import { TodoEntity } from "../../entities/todo.entity";
 import { TodoRepository } from "../../repositories/todo.repository";
 
 export interface GetTodosUseCase {
-    execute(id: number): Promise<TodoEntity[]>
+    execute(): Promise<TodoEntity[]>
 }
 
 export class GetTodos implements GetTodosUseCase{
